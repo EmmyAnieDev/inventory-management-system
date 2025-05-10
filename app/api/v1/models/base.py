@@ -1,8 +1,5 @@
 from datetime import datetime
-from sqlalchemy.ext.declarative import declared_attr
-
 from app.api.db import db
-
 
 class BaseModel(db.Model):
     """Base model for all entities with common attributes and methods"""
@@ -10,11 +7,6 @@ class BaseModel(db.Model):
 
     id = db.Column(db.Integer, primary_key=True)
     date_created = db.Column(db.DateTime, default=datetime.utcnow)
-
-    @classmethod
-    @declared_attr
-    def __tablename__(cls):
-        return cls.__name__.lower()
 
     def save(self):
         """Save the model instance to the database"""
