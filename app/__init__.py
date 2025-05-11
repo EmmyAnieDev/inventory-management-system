@@ -11,6 +11,9 @@ from app.extensions import jwt, mail, ma, migrate
 from app.api.v1.routes import auth
 from app.api.v1.routes import supplier
 from app.api.v1.routes import customer
+from app.api.v1.routes import category
+from app.api.v1.routes import product
+from app.api.v1.routes import stock
 
 
 def create_app():
@@ -39,6 +42,9 @@ def create_app():
     app.register_blueprint(auth.bp)
     app.register_blueprint(supplier.bp)
     app.register_blueprint(customer.bp)
+    app.register_blueprint(category.bp)
+    app.register_blueprint(product.bp)
+    app.register_blueprint(stock.bp)
 
     # Health check endpoint
     @app.route('/', methods=['GET'])
