@@ -13,7 +13,8 @@ def create_jwt_identity(user):
     identity = {
         "id": str(user.id),  # Ensure ID is a string
         "username": user.username,
-        "email": user.email
+        "email": user.email,
+        "role": user.role
     }
 
     return json.dumps(identity)  # Convert to a JSON string

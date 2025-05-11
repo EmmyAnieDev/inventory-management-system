@@ -8,7 +8,10 @@ class User(BaseModel):
     username = db.Column(db.String(80), unique=True, nullable=False)
     email = db.Column(db.String(120), unique=True, nullable=False)
     password_hash = db.Column(db.String(512), nullable=False)
-    role = db.Column(db.String(20), default="staff")
+    role = db.Column(db.String(20), nullable=False)  # customer, supplier, admin
+
+    customer = db.relationship('Customer', backref='user', uselist=False, lazy=True)
+    supplier = db.relationship('Supplier', backref='user', uselist=False, lazy=True)
 
     def set_password(self, password):
         self.password_hash = hash_password(password)
