@@ -140,7 +140,7 @@ Build and start the containers:
 3. Run the application:
 
 ```bash
-  python app.py
+  python main.py
 ```
 
 The API will be available at `http://localhost:5000/`.
