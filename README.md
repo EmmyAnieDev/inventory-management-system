@@ -115,6 +115,16 @@ Alternatively, you can run commands within the virtual environment without activ
 
 ### Running the Application
 
+#### Option 1: Using Docker (Recommended)
+
+Build and start the containers:
+
+```bash
+  docker-compose up -d
+```
+
+#### Option 2: (Using Poetry)
+
 1. Activate the Poetry virtual environment (if not already activated):
 
 ```bash

@@ -62,6 +62,7 @@ db.sqlite3-journal
 result.json
 *.rdb
 *.celery.log
+.celerybeat-schedule
 
 # Ignore Mac/OS & system files
 **/.DS_Store

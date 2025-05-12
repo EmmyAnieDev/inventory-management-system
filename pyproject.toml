@@ -5,6 +5,8 @@ description = "Inventory management system with Flask"
 authors = [
     {name = "EmmyAnieDev",email = "emaduilzjr1@gmail.com"}
 ]
+package-mode = false
+
 readme = "README.md"
 requires-python = ">=3.10,<4.0"
 dependencies = [
