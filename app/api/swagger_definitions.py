@@ -1,8 +1,8 @@
 swagger_template = {
     "swagger": "2.0",
     "info": {
-        "title": "Auth API",
-        "description": "Authentication API with JWT",
+        "title": "Inventory Management System API",
+        "description": """A RESTful API for tracking inventory levels through incoming supplier orders (stock additions) and outgoing customer orders (stock reductions), with multi-currency support.""",
         "version": "1.0.0"
     },
     "definitions": {
