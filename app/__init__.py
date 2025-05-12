@@ -14,6 +14,8 @@ from app.api.v1.routes import customer
 from app.api.v1.routes import category
 from app.api.v1.routes import product
 from app.api.v1.routes import stock
+from app.api.v1.routes import incoming_order
+from app.api.v1.routes import outgoing_order
 
 
 def create_app():
@@ -45,6 +47,8 @@ def create_app():
     app.register_blueprint(category.bp)
     app.register_blueprint(product.bp)
     app.register_blueprint(stock.bp)
+    app.register_blueprint(incoming_order.bp)
+    app.register_blueprint(outgoing_order.bp)
 
     # Health check endpoint
     @app.route('/', methods=['GET'])

@@ -9,6 +9,8 @@ from app.api.v1.models.user import User
 from app.api.v1.models.category import Category
 from app.api.v1.models.product import Product
 from app.api.v1.models.stock import Stock
+from app.api.v1.models.incoming_order import IncomingOrder
+from app.api.v1.models.outgoing_order import OutgoingOrder
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.

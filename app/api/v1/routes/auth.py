@@ -10,7 +10,6 @@ from marshmallow import ValidationError
 
 from app.api.db import db
 from app.api.utils.create_jwt_identity import create_jwt_identity
-from app.api.utils.send_mail import schedule_email
 from app.api.v1.models.customer import Customer
 from app.api.v1.models.supplier import Supplier
 from app.api.v1.models.user import User
