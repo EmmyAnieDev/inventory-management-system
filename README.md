@@ -32,20 +32,20 @@ A comprehensive REST API built with Flask for managing inventory, tracking produ
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/EmmyAnieDev/inventory-management-system.git
-cd inventory-management-system
+  git clone https://github.com/EmmyAnieDev/inventory-management-system.git
+  cd inventory-management-system
 ```
 
 2. Install dependencies with Poetry:
 
 ```bash
-poetry install
+  poetry install
 ```
 
 3. Create a `.env` file in the project root:
 
 ```bash
-cp .env.sample .env
+  cp .env.sample .env
 ```
 
 Then edit the `.env` file with your specific configuration values.
@@ -57,25 +57,25 @@ Then edit the `.env` file with your specific configuration values.
 1. Install Poetry if you haven't already:
 
 ```bash
-curl -sSL https://install.python-poetry.org | python3 -
+  curl -sSL https://install.python-poetry.org | python3 -
 ```
 
 2. Create a virtual environment with Poetry:
 
 ```bash
-poetry env use python3.8  # or your preferred Python version
+  poetry env use python3.8  # or your preferred Python version
 ```
 
 3. Activate the virtual environment:
 
 ```bash
-poetry shell
+  poetry shell
 ```
 
 Alternatively, you can run commands within the virtual environment without activating it:
 
 ```bash
-poetry run <command>
+  poetry run <command>
 ```
 
 #### Using Standard Python venv
@@ -83,7 +83,7 @@ poetry run <command>
 1. **Create a virtual environment**:  
 
 ```bash
-python3 -m venv .venv
+  python3 -m venv .venv
 ```
 
 2. **Activate the virtual environment**:  
@@ -91,25 +91,25 @@ python3 -m venv .venv
 - On macOS/Linux:  
 
 ```bash
-source .venv/bin/activate
+  source .venv/bin/activate
 ```
 
 - On Windows (PowerShell):  
 
 ```bash
-.venv\Scripts\Activate
+  .venv\Scripts\Activate
 ```
 
 3. **Install Poetry (if not already installed)**:
 
 ```bash
-pip install poetry
+  pip install poetry
 ```
 
 4. **Install project dependencies using Poetry**:  
 
 ```bash
-poetry install
+  poetry install
 ```
 
 
@@ -118,22 +118,24 @@ poetry install
 1. Activate the Poetry virtual environment (if not already activated):
 
 ```bash
-poetry shell
+  poetry shell
 ```
 
 2. Create the database:
 
 ```bash
-flask db upgrade
+  flask db upgrade
 ```
 
 3. Run the application:
 
 ```bash
-python app.py
+  python app.py
 ```
 
 The API will be available at `http://localhost:5000/`.
+
+The API documentation will be available at http://localhost:5000/apidocs.
 
 ## Project Structure
 
@@ -178,19 +180,19 @@ InventoryManagement/
 #### Adding Dependencies
 
 ```bash
-poetry add package-name
+  poetry add package-name
 ```
 
 For development dependencies:
 
 ```bash
-poetry add --dev package-name
+  poetry add --dev package-name
 ```
 
 #### Running Tests
 
 ```bash
-poetry run pytest
+  poetry run pytest
 ```
 
 #### Database Migrations
@@ -198,21 +200,20 @@ poetry run pytest
 Initialize migrations (first time only):
 
 ```bash
-flask db init
+  flask db init
 ```
 
 Create a new migration:
 
 ```bash
-flask db migrate -m "Description of changes"
+  flask db migrate -m "Description of changes"
 ```
 
 Apply migrations:
 
 ```bash
-flask db upgrade
+  flask db upgrade
 ```
 
 ## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
